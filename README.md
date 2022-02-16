@@ -135,7 +135,8 @@
 >  - TDD (32)
 >  - CSS (64)
 >  - JavaScript (128)
-​
- > Write a program that allows a user to input their skills and then tells them 
->  a) Their overall "coding skill score" 
- > b) Skills they may want to learn, and how much each one would improve their score
+> ​  
+> 
+> Write a program that allows a user to input their skills and then tells them:
+> 1. Their overall "coding skill score" 
+> 2. Skills they may want to learn, and how much each one would improve their score
