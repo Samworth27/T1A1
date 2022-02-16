@@ -96,5 +96,46 @@
 ## Q12
 
 > Identify and explain the error in the code snippet below that is preventing correct execution of the program
+> 
+> ![Snippet](/Q12.png)
 
-![Snippet](/Q12.png)
+---
+
+## Q13
+
+> The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
+> 
+> ![snippet](/Q13.png)
+
+---
+
+## Q14 
+
+> Demonstrate your algorithmic thinking through completing the following two tasks, in order:
+> 1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
+> 2. Write pseudocode for the process outlined in your flowchart
+
+---
+
+## Q15
+
+> Write pseudocode OR Ruby code for the following problem:
+> >*You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.*
+
+---
+
+## Q16
+
+> ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score" based on the specific competencies they require for this role; the more important the skill is for ACME corp, the more points it contributes to the "coding skill score" The skills are weighted as follows:
+>  - Python (1)
+>  - Ruby (2)
+>  - Bash (4)
+>  - Git (8)
+>  - HTML (16)
+>  - TDD (32)
+>  - CSS (64)
+>  - JavaScript (128)
+​
+ > Write a program that allows a user to input their skills and then tells them 
+>  a) Their overall "coding skill score" 
+ > b) Skills they may want to learn, and how much each one would improve their score
