@@ -2,7 +2,47 @@
 
 ## Q1
 
-> **IDENTIFY** and **EXPLAIN** common and import components and concepts of web development markup languages
+> **IDENTIFY** and **EXPLAIN** common and important components and concepts of web development markup languages
+
+
+- Not a programming language but used by browsers to determine how to format and display test
+- Work alongside text content using markers
+- Markers can be assigned addition attributes
+- Markers can be nested and can inherite attributes from parent markers
+
+
+~~Web markup languages use tags or markers alongside plain text that allow an interpreter to better understand the text and how to dispay it.~~
+
+~~These tags usually surround a piece of text, the following example in HTML would tell a web browser the word "bold" should be displayed in **bold**~~
+
+    <b> bold </b>
+
+<br>
+
+~~These tags are can be used nested inside other tags to allow for the seperation of information, assist in formatting or to allow more information to be passed to an interpreter. 
+The following example demostrates how HTML \<p> tags can be used to organise groups of text, it also shows \<b> and \<em> tags nested to apply two different styles to the word "not"~~
+
+    <p>This is a paragraph</p>
+    <p>This is also a paragraph
+    This is <b><em>not</em></b> a new paragraph</p>
+
+The result is shown below.
+
+> <p>This is a paragraph.</p>
+> <p>This is a new paragraph.
+> This is <b><em>not</em></b> a new paragraph</p>  
+Notice how even though the third line is typed on a new line it still appears next to the second line.
+<br> 
+
+
+Some tags can also contain extra information, for example the HTML \<a> (anchor) tab requires a link to either an internal or external reference.
+    
+    <a href='https://www.google.com/'>Click here to go to google</a>
+
+would be displayed as  
+<a href='https://www.google.com/'>Click here to go to google</a>  
+
+Other information 
 
 ---
 
@@ -49,7 +89,7 @@
 
 ## Q7
 
-> **IDENTIFY** TWO ethical issues from the areas below and **DISCUSS** the extent to which and IT professional is ethically responsible in terms of the issue.
+> **IDENTIFY** TWO ethical issues from the areas below and **DISCUSS** the extent to which an IT professional is ethically responsible in terms of the issue.
 > 
 >List of topics containing ethical issues:
 > - access to a user's personal information(medical, family, finacial, personal attributes such as sexuality, religion or beliefs)
@@ -68,11 +108,13 @@ Trading of shares on the stock exchange or crypto-currenceies
 
  - Ethical Requirements
    - Stable Code 
-     - If your providing an algo trading service, any errors in code has the ablity to lose money for whoever are using your service  
-     - if working with a large enough amount of equity ie. an investment firm, erroneus code has the potential to destabalise the market and lose vast sums of money [^1]
+     - If your providing a trading service (brokerage website, trading platform), any errors in code has the ablity to lose money for whoever are using your service  
+     - if working with a large enough amount of equity ie. an investment firm, erroneus code has the potential to destabalise the market and lose vast sums of money [^7-1]
+     - 
 
-[^1]: Knight Capital Group
 
+
+[^7-1]: Knight Capital Group
 https://en.wikipedia.org/wiki/Knight_Capital_Group#2012_stock_trading_disruption
 
 ---
