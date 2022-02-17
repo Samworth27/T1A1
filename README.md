@@ -52,18 +52,28 @@
 > **IDENTIFY** TWO ethical issues from the areas below and **DISCUSS** the extent to which and IT professional is ethically responsible in terms of the issue.
 > 
 >List of topics containing ethical issues:
-> - access to a suer's personal information(medical, family, fincacial, personal attributes such as sexuality, religion or beliefs)
+> - access to a user's personal information(medical, family, finacial, personal attributes such as sexuality, religion or beliefs)
 > - intellectual property, copyright, and acknowledgement
 > - criminal acts such as theft, fraud, trafficking and distibution of prohibited substances, terrorism
-> - GPS tracking data and other types of metadata, MAC addresses, hardware fingerprings
+> - GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
 > - freedom of thought, conscience, speech and the media
 > - aggressive sales and marketing practices designed to mislead and decieve consumers
-> - trading of shares on the stocke exchange OR crypto-currencies
+> - trading of shares on the stock exchange OR crypto-currencies
 >
 > For each ethical issue identify a source of legal information relating to the ethcial issue and discuss whether the law is helpful in assisting a developer to act in  an ethical way. *(Word count guide: 200 words max)*
 > 
 > Conduct **RESEARCH** into a case study of **ONE** of the ethical issues you have chosen **DISCUSS** how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. *(Word count guide: 400 - 600 words)*
 
+Trading of shares on the stock exchange or crypto-currenceies
+
+ - Ethical Requirements
+   - Stable Code 
+     - If your providing an algo trading service, any errors in code has the ablity to lose money for whoever are using your service  
+     - if working with a large enough amount of equity ie. an investment firm, erroneus code has the potential to destabalise the market and lose vast sums of money [^1]
+
+[^1]: Knight Capital Group
+
+https://en.wikipedia.org/wiki/Knight_Capital_Group#2012_stock_trading_disruption
 
 ---
 
