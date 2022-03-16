@@ -1,6 +1,14 @@
-langs = ['Python', 'Ruby', 'Bash', 'Git', 'HTML', 'TDD', 'CSS', 'Javascript']
+langs = {
+    Python:1,
+    Ruby:2,
+    Bash:4,
+    Git:8,
+    HTML:16,
+    TDD:32,
+    CSS:64,
+    Javascript:128
+}
 answers = {}
-weights = {}
 
 def clear_screen
     puts `clear`
@@ -11,27 +19,23 @@ def prompt_user(lang)
     print "> "
 end
 
+langs.each do |language, weight|
 
-
-langs.each_with_index do |lang, index|
-    clear_scrneen()
-    weights[lang.to_sym]=2**index
-    prompt_user(lang)
+    clear_screen()
+    prompt_user(language)
 
     while response = gets.chomp
         case response
         when "y", "yes"
-            puts "#{lang} : yes - worth #{weights[lang.to_sym]}"
-            answers[:"#{lang}"] = weights[lang.to_sym] # cant get it working
-            # answers[:"#{lang}"] = 2**index #fallback
+            answers[language] = weight
             break
         when "n", "no"
-            answers[:"#{lang}"] = 0
+            answers[language] = 0
             break
         else
             clear_screen()
             puts "Invalid Response!"
-            prompt_user(lang)
+            prompt_user(language)
         end
     end
 end
@@ -40,9 +44,13 @@ end
 
 clear_screen()
 #Calculate Score
-score = 0
-answers.each {|x,y| score += y}
+score = answers.sum{|_,value| value}
 puts "Your coding skill score is #{score}"
 puts "-"*50
 #Offer improvements
-answers.filter{|lang,score| score==0}.each {|lang,y| puts "You could learn #{lang} for #{weights[lang]} more points"}
+
+answers.each do |language, score|
+    if score == 0 
+        puts "You could learn #{language} for #{langs[language]} more points"
+    end
+end

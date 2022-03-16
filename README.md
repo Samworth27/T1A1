@@ -8,20 +8,43 @@
 - A web development markup language is not a programming language but used by interpreters (most commonly an internet browser) to determine how to format and display text and media
 - Work alongside text and media content using markers. Without the markers the content should still make sense.
 - Markers can be assigned addition attributes
-- Markers can be nested and can inherite attributes from parent markers
+- Markers can be nested and can inherit attributes from parent markers
 
 
 ---
 
 ## Q2
 
-> **DEFINE** the features of the following technologies that are esential in terms of the development of the internet:
+> **DEFINE** the features of the following technologies that are essential in terms of the development of the internet:
 > - packets
 > - IP addresses (IPv4 and IPv6)
 > - routers and routing
 > - domains and DNS
 >  
->  **EXPLAIN** how each technology has contributed to the developemnt of the internet
+>  **EXPLAIN** how each technology has contributed to the development of the internet
+
+
+### Packets:
+Network packets are formatted groups of data that are moved around in a network.
+These groups of data are part of a larger file or data stream that have been broken up so they can be sent via different routes from the source to destination and processed individually upon their arrival.
+This allows multiple connections to transmit and receive information simultaneously over a single network device, essentially what allows billions of devices to access the internet at the same time.
+
+A packet contains two main groups of information, the control information and the payload.
+- The header:
+  - Contains information for the delivery of the payload eg:
+    - Source network address
+    - Destination network address
+  - Also contains information for error checking such as:
+    - checksums (a small number generated from a larger size that will differ greatly with even small errors in the payload)
+    - parity bits (used to check for single bit errors while taking up very little additional space)
+- The payload:
+  - This is the part of the packet containing the actual file or data stream that was broken up for transmission
+
+https://en.wikipedia.org/wiki/Network_packet
+https://www.cloudflare.com/en-au/learning/network-layer/what-is-a-packet/
+
+### IP Addresses
+
 
 ---
 
@@ -32,13 +55,13 @@
 > - HTTP and HTTPS
 > - web browsers (requests, rendering and developer tools)
 >   
-> **EXPLAIN** how each technology has contributed to the development of the client and server communication over the itnernet *(50 - 150 words for each technology)*
+> **EXPLAIN** how each technology has contributed to the development of the client and server communication over the internet *(50 - 150 words for each technology)*
 
 ---
 
 ## Q4
 
-> **IDENTIFY** THREEE data structures used in the RUby programming language and **EXPLAIN** the reasons for using each
+> **IDENTIFY** THREE data structures used in the RUby programming language and **EXPLAIN** the reasons for using each
 
 ---
 
@@ -71,7 +94,7 @@
 > 
 > Conduct **RESEARCH** into a case study of **ONE** of the ethical issues you have chosen **DISCUSS** how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. *(Word count guide: 400 - 600 words)*
 
-Trading of shares on the stock exchange or crypto-currenceies
+Trading of shares on the stock exchange or crypto-currencies
 
  - Ethical Requirements
    - Stable Code 
