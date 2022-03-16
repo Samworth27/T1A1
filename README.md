@@ -5,44 +5,11 @@
 > **IDENTIFY** and **EXPLAIN** common and important components and concepts of web development markup languages
 
 
-- Not a programming language but used by browsers to determine how to format and display test
-- Work alongside text content using markers
+- A web development markup language is not a programming language but used by interpreters (most commonly an internet browser) to determine how to format and display text and media
+- Work alongside text and media content using markers. Without the markers the content should still make sense.
 - Markers can be assigned addition attributes
 - Markers can be nested and can inherite attributes from parent markers
 
-
-~~Web markup languages use tags or markers alongside plain text that allow an interpreter to better understand the text and how to dispay it.~~
-
-~~These tags usually surround a piece of text, the following example in HTML would tell a web browser the word "bold" should be displayed in **bold**~~
-
-    <b> bold </b>
-
-<br>
-
-~~These tags are can be used nested inside other tags to allow for the seperation of information, assist in formatting or to allow more information to be passed to an interpreter. 
-The following example demostrates how HTML \<p> tags can be used to organise groups of text, it also shows \<b> and \<em> tags nested to apply two different styles to the word "not"~~
-
-    <p>This is a paragraph</p>
-    <p>This is also a paragraph
-    This is <b><em>not</em></b> a new paragraph</p>
-
-The result is shown below.
-
-> <p>This is a paragraph.</p>
-> <p>This is a new paragraph.
-> This is <b><em>not</em></b> a new paragraph</p>  
-Notice how even though the third line is typed on a new line it still appears next to the second line.
-<br> 
-
-
-Some tags can also contain extra information, for example the HTML \<a> (anchor) tab requires a link to either an internal or external reference.
-    
-    <a href='https://www.google.com/'>Click here to go to google</a>
-
-would be displayed as  
-<a href='https://www.google.com/'>Click here to go to google</a>  
-
-Other information 
 
 ---
 
