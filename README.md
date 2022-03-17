@@ -25,7 +25,11 @@
 
 
 ### Packets:
-Network packets are formatted groups of data that are moved around in a network.
+
+A network packet is a group of data designed to be sent from one location to another as part of a larger file or data stream.
+
+
+<!-- Network packets are formatted groups of data that are moved around in a network.
 These groups of data are part of a larger file or data stream that have been broken up so they can be sent via different routes from the source to destination and processed individually upon their arrival.
 This allows multiple connections to transmit and receive information simultaneously over a single network device, essentially what allows billions of devices to access the internet at the same time.
 
@@ -41,7 +45,7 @@ A packet contains two main groups of information, the control information and th
   - This is the part of the packet containing the actual file or data stream that was broken up for transmission
 
 https://en.wikipedia.org/wiki/Network_packet
-https://www.cloudflare.com/en-au/learning/network-layer/what-is-a-packet/
+https://www.cloudflare.com/en-au/learning/network-layer/what-is-a-packet/ -->
 
 ### IP Addresses
 
