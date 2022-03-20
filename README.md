@@ -22,32 +22,90 @@
 > - domains and DNS
 >  
 >  **EXPLAIN** how each technology has contributed to the development of the internet
-
+> 
+The first early networks relied on physical circuitry changing to provide a dedicated line for the transmission of information, these are called "Circuit Switching Networks". A good example of this is early phone networks that relied on an operator to connect lines to allow users to communicate. This type of network however is inefficient as a connection is required to be maintained regardless of whether data is being transfered and limits the amount of simultaneous users. A number of inovations over the years allowed simple networks like this to evolve into the Internet as we know it.
 
 ### Packets:
 
-A network packet is a group of data designed to be sent from one location to another as part of a larger file or data stream.
+An improvemnt over Cicruit Switching Networks was the creation of "Packet Switching Networks", where data is split up into smaller pieces called "Packets" before being trasmitted. When a node in the network receives a packet it will add it to a queue to be forwarded on to another node. This process is repeated until the packet reaches its destination. This allows many users to share one connection between two nodes, and by having packets take different paths between source and destination this spreads out the bandwidth requirements of a single user between many nodes. The combination of sharing connections and distributing the network load was the keystone of the creation of the first Wide Area Packet Switching Network - "ARPANET"
 
+A packet can be thought of as an envelope containing a message with the information required to send the message on the outside of the envelope.
 
-<!-- Network packets are formatted groups of data that are moved around in a network.
-These groups of data are part of a larger file or data stream that have been broken up so they can be sent via different routes from the source to destination and processed individually upon their arrival.
-This allows multiple connections to transmit and receive information simultaneously over a single network device, essentially what allows billions of devices to access the internet at the same time.
+A packet is comprised of two seperate parts:
+- The control information 
+  - located in headers and/or footers
+  - readable by any node on the network
+  - may contain:
+    - Source and destination addresses used by nodes on the network to route the packet to its destination
+    - Packet order information
+    - Error detection codes for the reciever to verify the payload
+- The Payload
+  - This is the actual data that is being sent from one user on the network to another
+  - Only readable by the destination user
 
-A packet contains two main groups of information, the control information and the payload.
-- The header:
-  - Contains information for the delivery of the payload eg:
-    - Source network address
-    - Destination network address
-  - Also contains information for error checking such as:
-    - checksums (a small number generated from a larger size that will differ greatly with even small errors in the payload)
-    - parity bits (used to check for single bit errors while taking up very little additional space)
-- The payload:
-  - This is the part of the packet containing the actual file or data stream that was broken up for transmission
 
 https://en.wikipedia.org/wiki/Network_packet
-https://www.cloudflare.com/en-au/learning/network-layer/what-is-a-packet/ -->
 
-### IP Addresses
+https://www.cloudflare.com/en-au/learning/network-layer/what-is-a-packet/
+
+https://www.sciencemuseum.org.uk/objects-and-stories/arpanet-internet
+
+### IP Addresses (IPv4/IPv6)
+
+The creation of ARPANET led to other organisations developing their own standalone networks however these networks where incompatible with each other.
+Work by 1974 led to the creation of a protocol for packet switching between networks. This led to the creation of the 'Transmission Control Program'. This program was later broken down into the 'Transmission Control Protocol' (TCP) and the 'Internet Protocols'.
+During this process the term 'Internet' was first used as a shorthand for internetwork.
+
+The TCP controls how a file is broken up into packets but the IP is resposible for defining the format of the packets as well as providing and addressing system.
+The two versions of the IP addressing system in use are IPv4 and IPv6 however the two are not directly interoperable. The purpose of IP addresses are to assign every connection on the Internet a unique identifier.
+
+IPv4 uses 32-bit addresses (4 bytes) for a total of 2<sup>32</sup> (4,294,967,296) addresses.
+As early as the 1980's it became obvious that the number of available addresses would no be able to serve the growing number of devices connecting to the Internet. Many technologies have been implemented to help allieviate the shrinking number of IPv4 addresses available however the long term solution was the specification of IPv6 in 1998 with 2<sup>128</sup> (340,282,366,920,938,463,463,374,607,431,768,211,456) addresses.
+
+https://en.wikipedia.org/wiki/Internet_Protocol
+
+https://en.wikipedia.org/wiki/IPv4
+
+https://en.wikipedia.org/wiki/IPv6
+
+### Routing
+
+In order for a packet to arrive at its destination it must be passed along through many nodes. The process of calculating the path between nodes that a packet must take is called "routing" and the network devices that perform this "Routers".
+
+While most people will be aware of a home router or "Access Router" that performs simple IP forwarding, much more advanced routers exist connecting large enterprise networks and Internet Service Providers (ISPs) and "Core Routers" that direct network traffic around the Internet's "Backbone"
+
+Routers on smaller networks rely on pre-configured routing tables to direct IP packets around but the routers servicing larger, more dynamic networks rely on combinations of advanced algoriths to direct IP packets between networks.
+
+The ability for the large routers to dynamically forward IP packets between networks is cruicial in allowing the forwarding of packets from their source to destination and crucial in the operation of the Internet
+
+https://en.wikipedia.org/wiki/IP_routing
+
+https://en.wikipedia.org/wiki/Routing
+
+https://en.wikipedia.org/wiki/Router_(computing)
+
+https://en.wikipedia.org/wiki/Core_router
+
+
+### Domains and DNS
+
+The DNS (Domain Name System) is an autonomous system designed to act like the phone book of the internet. Translating human readable addresses such as URLs or email addresses into IP addresses.
+
+A domain on the Internet is a named group of networks. The entire domain name space is structured as a "Tree" data structure. The "Root Zone" is the highest level of the DNS, from here the tree divides into zones based of what are called "Top Level Domains" (TLD). Top level domains fall under a number of categories however the most common are generic TLDs (gTLD) such as `.com`, `.net` or `.org` or country code TLD's (ccTLD), eg `.au` for Australia. These zones contain the information needed to direct traffic to an IP address as well as information relating to subzones.
+
+From here the tree continues to divide based on the next level domains.
+
+When a domain name is read, it is read from right to left and sub-domain names are seperated with a `.`.
+
+In the example `google.com.au`: `au` is the top level domain, followed by `com`. `google` is the third level domain and because it has at least one associated IP address is also a hostname.
+
+https://en.wikipedia.org/wiki/Top-level_domain
+
+https://en.wikipedia.org/wiki/Domain_name
+
+https://en.wikipedia.org/wiki/Domain_Name_System
+
+https://en.wikipedia.org/wiki/Tree_(data_structure)
 
 
 ---
@@ -67,6 +125,19 @@ https://www.cloudflare.com/en-au/learning/network-layer/what-is-a-packet/ -->
 
 > **IDENTIFY** THREE data structures used in the RUby programming language and **EXPLAIN** the reasons for using each
 
+### String
+
+A string is used to store a sequence of characters. Strings are most often used to store data that is intended to be readable by both humans and computers
+
+### Array
+
+An array stores an orders list of data. The data contained can be of any other data type including other arrays.
+They are used to store groups of information when order is important
+
+### Hash
+
+Hashes are used to store groups of information where order is unimportant but values are instead related to a specific key.
+
 ---
 
 ## Q5
@@ -78,6 +149,26 @@ https://www.cloudflare.com/en-au/learning/network-layer/what-is-a-packet/ -->
 ## Q6
 
 > **IDENTIFY** TWO commonly used programming languages and **EXPLAIN** the benefits and drawbacks of each
+
+### Python
+
+`+` Python has a gentle learning curve and the code is easily readable.
+
+`+` There are many additional libraries that extend the base language.
+
+`-` The language has a low execution speed, ie it is slow in runtime, however there are libraries avaliable to execute some code in other languages such as C.
+`-` Due to its simple syntax some developers may struggle swapping from python to a language with more complex syntax.
+
+
+### Javascript
+
+`+` Fast execution due to being run client side in the browser
+
+`+` Simple syntax makes it easy to learn
+
+`-` Because code is run client side this can sometimes be exploited for malicious purposes
+
+
 
 ---
 
@@ -116,6 +207,16 @@ https://en.wikipedia.org/wiki/Knight_Capital_Group#2012_stock_trading_disruption
 ## Q8
 
 > Explain control flow, using examples from the Ruby programming language
+
+Control flow is the term used to describe the order in which operations in a program are executed.
+The different types of control flow structures fall into two catergories:
+
+### Choice
+Choice control structures direct the flow of the program based off conditional statements. There are two types:
+
+#### If-Then-(Else)
+
+
 
 ---
 

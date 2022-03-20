@@ -46,7 +46,7 @@ def calc_score(flags = languages)
   calc_score = 0
   # For each language
   flags.each do |language, value|
-    calc_score |= value if response(language).true?
+    calc_score |= value if response(language)
   end
   # Clear screen and return calculated score
   clear_screen
@@ -87,6 +87,6 @@ print '> '
 score = gets.chomp.to_i
 clear_screen
 # If no score was entered, or an invalid score was entered, get a new score
-score = calc_score if score.zero?
+score = calc_score(languages) if score.zero?
 # Display either the entered score or the calculated score
-display_score(score)
+display_score(score, languages)
