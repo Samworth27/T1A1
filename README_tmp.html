@@ -462,9 +462,7 @@ As early as the 1980's it became obvious that the number of available addresses 
 <p>The TCP acts as an intermediate service provider between applications and the Internet Protocol.
 TCP controls the splitting of data into packets,sending/ receiving of the packets, requesting re-transmission of lost packets, re-ordering of packets upon arrival and sending the data complete to the program.</p>
 <h3 id="http-and-https">HTTP and HTTPS</h3>
-<p>Provide a service for users (web browsers, internet crawling services, etc) to access web related files from a web server.</p>
 <h3 id="web-browsers">Web Browsers</h3>
-<p>Provide an interface for a user to view and interact with web pages by interpreting client side code (HTML, CSS, Javascript)</p>
 <hr>
 <h2 id="q4">Q4</h2>
 <blockquote>
@@ -548,13 +546,7 @@ They are used to store groups of information when order is important</p>
 </ul>
 <h3 id="freedom-of-thought-conscience-speech-and-the-media">Freedom of thought, conscience, speech and the media</h3>
 <ul>
-<li>Free speech vs harmful (mis)information
-<ul>
-<li>How much do you control</li>
-<li>When do you step in</li>
-<li>Who gets to decide what is what</li>
-</ul>
-</li>
+<li>Free speech vs harmful (mis)information</li>
 </ul>
 <p>https://en.wikipedia.org/wiki/Knight_Capital_Group#2012_stock_trading_disruption</p>
 <hr>
@@ -628,40 +620,40 @@ the block. I <code>i</code> is initialised to <code>5</code> or larger then the 
 <th> Code </th>
 <th> Output </th>
 </tr><tr><td>
-<pre class="hljs"><code><div>i = <span class="hljs-number">0</span>
+</td></tr></table><pre class="hljs"><code><div>i = <span class="hljs-number">0</span>
 <span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">5</span>
   puts i
   i += <span class="hljs-number">1</span>
 <span class="hljs-keyword">end</span>
 puts <span class="hljs-string">'end'</span>
 </div></code></pre>
-</td><td>
-<pre class="hljs"><code><div>0
+<td>
+</td><pre class="hljs"><code><div>0
 1
 2
 3
 4
 end
 </div></code></pre>
-</td></tr><tr></tr><tr><td>  
-<pre class="hljs"><code><div>i = <span class="hljs-number">10</span>
+<tr></tr><tr><td>  
+</td></tr><pre class="hljs"><code><div>i = <span class="hljs-number">10</span>
 <span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">5</span>
   puts i
   i += <span class="hljs-number">1</span>
 <span class="hljs-keyword">end</span>
 puts <span class="hljs-string">'end'</span>
 </div></code></pre>
-</td><td>
-<pre class="hljs"><code><div>end
+<td>
+</td><pre class="hljs"><code><div>end
 </div></code></pre>
-</td></tr></table>
+
 <p>OUTPUT:</p>
 <p>Ruby also has a <code>loop</code> statement which is a lot more flexible. The following example is nearly identical to the previous however tests at the end of the loop meaning even if <code>i</code> is initialised to a value larger than <code>5</code> it will still execute the loop at least once</p>
 <table><tr>
 <th> Code </th>
 <th> Output </th>
 </tr><tr><td>
-<pre class="hljs"><code><div>i = <span class="hljs-number">0</span>
+</td></tr></table><pre class="hljs"><code><div>i = <span class="hljs-number">0</span>
 loop <span class="hljs-keyword">do</span>
   puts i
   i += <span class="hljs-number">1</span>
@@ -669,16 +661,16 @@ loop <span class="hljs-keyword">do</span>
 <span class="hljs-keyword">end</span>
 puts <span class="hljs-string">'end'</span>
 </div></code></pre>
-</td><td>
-<pre class="hljs"><code><div>0
+<td>
+</td><pre class="hljs"><code><div>0
 1
 2
 3
 4
 end
 </div></code></pre>
-</td></tr><tr></tr><tr><td>  
-<pre class="hljs"><code><div>i = <span class="hljs-number">10</span>
+<tr></tr><tr><td>  
+</td></tr><pre class="hljs"><code><div>i = <span class="hljs-number">10</span>
 loop <span class="hljs-keyword">do</span>
   puts i
   i += <span class="hljs-number">1</span>
@@ -686,11 +678,11 @@ loop <span class="hljs-keyword">do</span>
 <span class="hljs-keyword">end</span>
 puts <span class="hljs-string">'end'</span>
 </div></code></pre>
-</td><td>
-<pre class="hljs"><code><div>10
+<td>
+</td><pre class="hljs"><code><div>10
 end
 </div></code></pre>
-</td></tr></table>
+
 <h4 id="collection-controlled-loops">Collection-Controlled Loops</h4>
 <p>Collection-Controlled Loops are a special type of loop not found in all languages. They provide a built in method to loop through all elements of a collection.<br>
 In ruby these loops are referred to as Iterators and the most common in Ruby is <code>each</code>.<br>
@@ -735,8 +727,7 @@ p z.class
 <blockquote>
 <p>Explain data types, using examples</p>
 </blockquote>
-<p>Data types provide a meaningful way to interact with data and allow both a user and program to interpret and use data.</p>
-<p>The character <code>'9'</code> is very different from the integer <code>9</code> which is also very different from the float <code>9.0</code>. They all serve different purposes but are also stored different and take up different amounts of space in a computers memory.</p>
+<p>Data types provide a meaningful way to interact with data.</p>
 <hr>
 <h2 id="q11">Q11</h2>
 <blockquote>
@@ -827,7 +818,7 @@ You can create menus for item types to allow for easy grouping for display purpo
 <h2 id="q12">Q12</h2>
 <blockquote>
 <p>Identify and explain the error in the code snippet below that is preventing correct execution of the program</p>
-<p><img src="/Q12.png" alt="Snippet"></p>
+<p><img src="file:///Q12.png" alt="Snippet"></p>
 </blockquote>
 <p>The error in the code snippet is on line <code>1</code>, specifically the <code>gets</code> statement. The <code>gets</code> statement retrieves a string and on line <code>2</code> the value of <code>celsius</code> is first multiplied by <code>9</code> which if the user had entered <code>20</code> would build the string <code>&quot;20\n20\n20\n20\n20\n20\n20\n20\n20\n&quot;</code>. The next step following normal mathematical Order of Operations is to divide this string by <code>5</code> however although you can multiply a string in ruby you can't divide a string. Attempting to do this causes the program to throw a <code>NoMethodError</code> and stop.</p>
 <p>This can be fixed by using explicit type coercion on the <code>gets</code> statement to turn the string into either an int or float depending on whether you want decimals.
@@ -842,7 +833,7 @@ puts <span class="hljs-string">'.'</span>
 <h2 id="q13">Q13</h2>
 <blockquote>
 <p>The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.</p>
-<p><img src="/Q13.png" alt="snippet"></p>
+<p><img src="file:///Q13.png" alt="snippet"></p>
 </blockquote>
 <pre class="hljs"><code><div>arr = [<span class="hljs-number">5</span>, <span class="hljs-number">22</span>, <span class="hljs-number">29</span>, <span class="hljs-number">39</span>, <span class="hljs-number">49</span>, <span class="hljs-number">51</span>, <span class="hljs-number">78</span>, <span class="hljs-number">96</span>, <span class="hljs-number">184</span>]
 
@@ -861,7 +852,7 @@ puts <span class="hljs-string">'.'</span>
 <ol>
 <li>Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations</li>
 <li>Write pseudocode for the process outlined in your flowchart
-<img src="/flowchart.svg" alt="flowchart"></li>
+<img src="file:///flowchart.svg" alt="flowchart"></li>
 </ol>
 </blockquote>
 <pre class="hljs"><code><div>function is_a_prime?(input)

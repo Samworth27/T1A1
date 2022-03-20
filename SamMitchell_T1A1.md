@@ -126,11 +126,7 @@ TCP controls the splitting of data into packets,sending/ receiving of the packet
 
 ### HTTP and HTTPS
 
-Provide a service for users (web browsers, internet crawling services, etc) to access web related files from a web server.
-
 ### Web Browsers
-
-Provide an interface for a user to view and interact with web pages by interpreting client side code (HTML, CSS, Javascript) 
 
 ---
 
@@ -230,10 +226,6 @@ Example languages include C and Java
 ### Freedom of thought, conscience, speech and the media
 
 - Free speech vs harmful (mis)information
-  - How much do you control
-  - When do you step in
-  - Who gets to decide what is what
-  
 
 
 https://en.wikipedia.org/wiki/Knight_Capital_Group#2012_stock_trading_disruption
