@@ -126,7 +126,11 @@ TCP controls the splitting of data into packets,sending/ receiving of the packet
 
 ### HTTP and HTTPS
 
+Provide a service for users (web browsers, internet crawling services, etc) to access web related files from a web server.
+
 ### Web Browsers
+
+Provide an interface for a user to view and interact with web pages by interpreting client side code (HTML, CSS, Javascript) 
 
 ---
 
@@ -226,6 +230,10 @@ Example languages include C and Java
 ### Freedom of thought, conscience, speech and the media
 
 - Free speech vs harmful (mis)information
+  - How much do you control
+  - When do you step in
+  - Who gets to decide what is what
+  
 
 
 https://en.wikipedia.org/wiki/Knight_Capital_Group#2012_stock_trading_disruption
@@ -559,7 +567,7 @@ By creating a class for reviews you can aggregate reviews based on the restauran
 
 > Identify and explain the error in the code snippet below that is preventing correct execution of the program
 > 
-> ![Snippet](/Q12.png)
+> ![Snippet](Q12.png)
 
 The error in the code snippet is on line `1`, specifically the `gets` statement. The `gets` statement retrieves a string and on line `2` the value of `celsius` is first multiplied by `9` which if the user had entered `20` would build the string `"20\n20\n20\n20\n20\n20\n20\n20\n20\n"`. The next step following normal mathematical Order of Operations is to divide this string by `5` however although you can multiply a string in ruby you can't divide a string. Attempting to do this causes the program to throw a `NoMethodError` and stop.
 
@@ -580,7 +588,7 @@ puts '.'
 
 > The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
 > 
-> ![snippet](/Q13.png)
+> ![snippet](Q13.png)
 ```ruby
 arr = [5, 22, 29, 39, 49, 51, 78, 96, 184]
 
@@ -599,7 +607,7 @@ end
 > Demonstrate your algorithmic thinking through completing the following two tasks, in order:
 > 1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
 > 2. Write pseudocode for the process outlined in your flowchart
-![flowchart](/flowchart.svg)
+![flowchart](flowchart.png)
 
 ```
 function is_a_prime?(input)

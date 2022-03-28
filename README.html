@@ -827,7 +827,7 @@ You can create menus for item types to allow for easy grouping for display purpo
 <h2 id="q12">Q12</h2>
 <blockquote>
 <p>Identify and explain the error in the code snippet below that is preventing correct execution of the program</p>
-<p><img src="/Q12.png" alt="Snippet"></p>
+<p><img src="Q12.png" alt="Snippet"></p>
 </blockquote>
 <p>The error in the code snippet is on line <code>1</code>, specifically the <code>gets</code> statement. The <code>gets</code> statement retrieves a string and on line <code>2</code> the value of <code>celsius</code> is first multiplied by <code>9</code> which if the user had entered <code>20</code> would build the string <code>&quot;20\n20\n20\n20\n20\n20\n20\n20\n20\n&quot;</code>. The next step following normal mathematical Order of Operations is to divide this string by <code>5</code> however although you can multiply a string in ruby you can't divide a string. Attempting to do this causes the program to throw a <code>NoMethodError</code> and stop.</p>
 <p>This can be fixed by using explicit type coercion on the <code>gets</code> statement to turn the string into either an int or float depending on whether you want decimals.
@@ -842,7 +842,7 @@ puts <span class="hljs-string">'.'</span>
 <h2 id="q13">Q13</h2>
 <blockquote>
 <p>The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.</p>
-<p><img src="/Q13.png" alt="snippet"></p>
+<p><img src="Q13.png" alt="snippet"></p>
 </blockquote>
 <pre class="hljs"><code><div>arr = [<span class="hljs-number">5</span>, <span class="hljs-number">22</span>, <span class="hljs-number">29</span>, <span class="hljs-number">39</span>, <span class="hljs-number">49</span>, <span class="hljs-number">51</span>, <span class="hljs-number">78</span>, <span class="hljs-number">96</span>, <span class="hljs-number">184</span>]
 
@@ -861,7 +861,7 @@ puts <span class="hljs-string">'.'</span>
 <ol>
 <li>Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations</li>
 <li>Write pseudocode for the process outlined in your flowchart
-<img src="/flowchart.svg" alt="flowchart"></li>
+<img src="flowchart.png" alt="flowchart"></li>
 </ol>
 </blockquote>
 <pre class="hljs"><code><div>function is_a_prime?(input)
